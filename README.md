@@ -1,13 +1,10 @@
-
-![44 230 170 14_5000_](https://user-images.githubusercontent.com/71055964/197862792-98751a65-09df-41dd-9ab2-92d4b62338a9.png)
-
 📝<br><i>
 just a simple aws exercise using ec2, s3, dynamodb, flask <br>
 blog webpage (list,upload,delete)</i>
 
-## How to Run
+## step
 - create EC2 instance (region: us-west-2 / custom TCP port 5000), associate with Elastic IP
-- create s3 bucket <i>*name : "1971036-blogbucket"</i>
+- create s3 bucket 
 
 *bucket should be public => edit bucket policy
 ```
@@ -22,12 +19,13 @@ blog webpage (list,upload,delete)</i>
                 "AWS": "*"
             },
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::1971036-blogbucket/*"
+            "Resource": "arn:aws:s3:::bucketname/*"
         }
     ]
 }
 ```
-- create dynamo db table <i>*name : "blogTable"</i>
+- create dynamo db table 
 - connect server, download files
 - on EC2 run command (nohup) flask run --host=0.0.0.0
 - go to url: elastic ip:5000
+
