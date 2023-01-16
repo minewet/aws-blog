@@ -29,3 +29,4 @@ blog webpage (list,upload,delete)</i>
 - on EC2 run command (nohup) flask run --host=0.0.0.0
 - go to url: elastic ip:5000
 
+![44 230 170 14_5000_](https://user-images.githubusercontent.com/71055964/197862792-98751a65-09df-41dd-9ab2-92d4b62338a9.png)
